@@ -82,7 +82,7 @@ export default function App() {
       <div className="flex flex-1 overflow-hidden">
         <FormSidebar form={form} onChange={setForm} />
         <div className="flex-1 flex flex-col min-w-0 overflow-hidden">
-          <MarkdownPreview markdown={markdown} generating={false} />
+          <MarkdownPreview markdown={markdown} onChange={setMarkdown} />
           <BottomBar markdown={markdown} />
         </div>
       </div>
